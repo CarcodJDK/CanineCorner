@@ -1,0 +1,157 @@
+/* General body styles */
+body {
+    font-family: font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    padding-left: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation bar styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #444;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+/* Left navigation section (Home, Products, About Us) */
+nav .left-nav {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    position: relative;
+}
+
+/* Navigation links styles */
+nav a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+    background-color: #575757;
+    color: #fff;
+}
+
+/* Submenu styles */
+nav .submenu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+/* Show submenu when hovering over parent menu */
+nav .parent-menu:hover + .submenu, nav .submenu:hover {
+    display: block;
+}
+
+/* Submenu links styles */
+nav .submenu a {
+    display: block;
+    color: white;
+    padding: 12px 16px;
+    text-align: left;
+    text-decoration: none;
+}
+
+nav .submenu a:hover {
+    background-color: #575757;
+}
+
+/* Right navigation section (Login, Register) */
+nav .right-nav {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+}
+
+nav .right-nav a {
+    margin-left: 10px;
+}
+
+/* Content section styles */
+.content {
+    padding: 20px;
+}
+
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.product {
+    flex: 1;
+    max-width: 45%;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product img {
+    width: 200px;
+    height: auto;
+    border-radius: 4px;
+  
+}
+
+.product p {
+    margin: 10px 0 0;
+}
+.product h1{
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+.quantity-selector {
+    margin: 10px 0;
+}
+
+.quantity-selector label {
+    margin-right: 5px;
+}
+
+.quantity-selector input {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+.product button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #575757;
+}

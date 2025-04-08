@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Dog Products Store</title>
+    <link rel="stylesheet" href="tienda.css">
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+
+<header>
+    <h1>Register</h1>
+</header>
+
+<nav>
+    <div class="left-nav">
+        <a href="index.php">Home</a>
+        <a href="tienda.php">Products</a>
+        <a href="aboutus.php">About Us</a>
+        <a href="mis_productos.php">My Products</a>
+    </div>
+    <div class="right-nav">
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </div>
+</nav>
+
+<div class="content">
+    <h2>Create an Account</h2>
+    <form action="register.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+
+        <label for="telefono">Telefono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+</body>
+</html>
